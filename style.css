@@ -526,7 +526,7 @@ body.light-theme {
     column-gap: 0.5rem;
 }
 
-.skills .bxs-badge-check {
+.skills .fa-circle-check {
     font-size: 1rem;
     color: var(--first-color);
 }
