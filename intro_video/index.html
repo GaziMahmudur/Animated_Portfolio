@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro</title>
+  <style>
+    html,body{
+      margin:0;padding:0;height:100%;overflow:hidden;
+      background:#000;
+    }
+    video{
+      width:100vw;height:100vh;object-fit:cover;
+    }
+  </style>
+</head>
+<body>
+  <video id="introVideo" autoplay muted>
+    <source src="../video/Black White Gold Modern Animated Video Opening Youtube Intro.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    // ভিডিও শেষ হলে মূল সাইটে চলে যাও
+    document.getElementById('introVideo').onended = () => {
+      window.location.href = '../index.html';   // ← তোমার আসল সাইটের ফাইল
+    };
+  </script>
+</body>
+</html>

@@ -28,8 +28,8 @@
     --text-color-light: hsl(var(--second-hue), 4%, 55%);
     --body-color: hsl(220, 30%, 2.5%);
     /* Darker Jet Black */
-    --container-color: hsl(var(--second-hue), 32%, 12%);
-    --container-blur: blur(10px);
+    /* --container-color: hsl(var(--second-hue), 32%, 12%); */
+    --container-blur: blur(20px);
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -87,10 +87,6 @@ textarea {
 
 body {
     background-color: var(--body-color);
-    background-image: url(./img/bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     color: var(--text-color);
     transition: 0.4s;
     /* for light mode animation */
@@ -390,6 +386,8 @@ body.light-theme {
 .home__social-link {
     width: max-content;
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
     color: var(--first-color);
     padding: 0.25rem;
     border-radius: 0.5rem;
@@ -475,6 +473,11 @@ body.light-theme {
 
 .about__box {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     border-radius: 0.75rem;
     padding: 0.75rem 0.5rem;
 }
@@ -505,6 +508,11 @@ body.light-theme {
 
 .skills__content {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 1.5rem;
     border-radius: 1.25rem;
 }
@@ -558,6 +566,11 @@ body.light-theme {
 
 .services__card {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 3rem 1.5rem 1.5em;
     border-radius: 1.25rem;
 }
@@ -682,6 +695,11 @@ body.light-theme {
 
 .work__card {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -725,6 +743,11 @@ body.light-theme {
 /*=============== TESTIMONIAL ===============*/
 .testimonial__card {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 1.25rem 1.5rem;
     border-radius: 1.5rem;
     margin-bottom: 3rem;
@@ -775,6 +798,11 @@ body.light-theme {
 
 .contact__card {
     background-color: var(--container-color);
+    backdrop-filter: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 2rem 1rem;
     border-radius: 0.75rem;
     text-align: center;
@@ -905,7 +933,7 @@ body.light-theme {
 .footer__copy {
     display: block;
     margin-top: 4.5rem;
-    color: var(--container-blur);
+    color: black;
     text-align: center;
     font-size: var(--smaller-font-size);
     margin-bottom: 2rem;
@@ -916,6 +944,10 @@ body.light-theme {
     width: 0.5rem;
     border-radius: 0.5rem;
     background-color: var(--container-blur);
+    background-image: url("./img/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 ::-webkit-scrollbar-track {
