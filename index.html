@@ -19,7 +19,7 @@
     <!--=============== BOXICONS ===============-->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -40,31 +40,32 @@
                 <ul class="nav__list">
                     <li class="nav__item ">
                         <a href="#home" class="nav__link">
-                            <i class="fa-solid fa-house"></i>
+                            <i data-lucide="house" class="icon"></i>
                         </a>
                     </li>
 
                     <li class="nav__item ">
                         <a href="#about" class="nav__link">
-                            <i class="fa-solid fa-circle-user"></i>
+                            <i data-lucide="circle-user" class="icon"></i>
+
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">
-                            <i class="fa-solid fa-book"></i>
+                            <i data-lucide="book-minus" class="icon"></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#work" class="nav__link">
-                            <i class="fa-solid fa-briefcase"></i>
+                            <i data-lucide="briefcase-business" class="icon"></i>
                         </a>
                     </li>
 
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">
-                            <i class="fa-solid fa-address-book"></i>
+                            <i data-lucide="contact" class="icon"></i>
                         </a>
                     </li>
                 </ul>
@@ -101,11 +102,11 @@
 
                 <div class="home__social">
                     <a href="https://www.facebook.com/g.mahmudur/" target="_blank" class="home__social-link">
-                        <i class="fa-brands fa-facebook"></i> </a>
+                        <i data-lucide="facebook" class="icon"></i> </a>
                     <a href="https://github.com/GaziMahmudur" target="_blank" class="home__social-link">
-                        <i class="fa-brands fa-github"></i> </a>
+                        <i data-lucide="github" class="icon"></i> </a>
                     <a href="https://x.com/Gazi__Shuvo" target="_blank" class="home__social-link">
-                        <i class="fa-brands fa-square-x-twitter"></i> </a>
+                        <i data-lucide="twitter" class="icon"></i> </a>
                 </div>
 
                 <a href="#about" class="home__scroll">
@@ -126,17 +127,17 @@
                 <div class="about__data">
                     <div class="about__info">
                         <div class="about__box">
-                            <i class="fa-solid fa-award about__icon"></i>
+                            <i data-lucide="briefcase" class="about__icon"></i>
                             <h3 class="about__title">Experience</h3>
                             <span class="about__subtitle">2+ Years Working</span>
                         </div>
                         <div class="about__box">
-                            <i class="fa-solid fa-briefcase about__icon"></i>
+                            <i data-lucide="briefcase" class="about__icon"></i>
                             <h3 class="about__title">Completed</h3>
                             <span class="about__subtitle">3+ Projects</span>
                         </div>
                         <div class="about__box">
-                            <i class="fa-solid fa-headset about__icon"></i>
+                            <i data-lucide="headset" class="about__icon"></i>
                             <h3 class="about__title">Support</h3>
                             <span class="about__subtitle">Online 24/7</span>
                         </div>
@@ -556,7 +557,7 @@
                         </div>
 
                         <div class="contact__card">
-                            <i class='fa-brands fa-x-twitter contact__card-icon'></i>
+                            <i class="fa-brands fa-twitter contact__card-icon"></i>
                             <h3 class="contact__card-title">Twitter</h3>
                             <span class="contact__card-data">Gazi__Shuvo</span>
 
@@ -665,6 +666,12 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="script.js"></script>
+
+    <!--=============== LUCIDE ICONS ===============-->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>

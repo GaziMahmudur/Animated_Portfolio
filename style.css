@@ -13,26 +13,37 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-    --first-hue: 190;
-    /* Cyan */
+    --first-hue: 205;
+    /* iOS Blue-Teal */
     --sat: 100%;
-    --lig: 60%;
+    --lig: 58%;
 
-    --second-hue: 220;
+    --second-hue: 230;
+    /* Violet-Gray for text */
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    /* Cyan */
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 50%);
-    --title-color: hsl(var(--second-hue), 15%, 95%);
-    --text-color: hsl(var(--second-hue), 8%, 75%);
-    --text-color-light: hsl(var(--second-hue), 4%, 55%);
+    /* Accent Blue */
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 48%);
+    /* Darker shade */
+
+    --title-color: hsl(var(--second-hue), 30%, 96%);
+    /* Pure for headings */
+    --text-color: hsl(var(--second-hue), 15%, 75%);
+    /* Medium-gray */
+    --text-color-light: hsl(var(--second-hue), 10%, 50%);
+    /* Light-gray text */
+
     --body-color: #040608;
-    /* Darker Jet Black */
-    --container-color: hsl(var(--second-hue), 32%, 12%);
+    /* Your fixed body color */
+    --container-color: hsla(var(--second-hue), 15%, 8%, 0.92);
+    /* Deep bluish-black */
+
+    --glass-blur: blur(20px);
+    --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.3);
 
     /*=============== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Poppins", sans-serif;
+    --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     --biggest-font-size: 1.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -386,7 +397,7 @@ body.light-theme {
     background-color: var(--container-color);
     color: var(--first-color);
     padding: 0.25rem;
-    border-radius: 0.5rem;
+    border-radius: 999px;
     display: flex;
     font-size: 1rem;
     transition: 0.4s;
@@ -429,7 +440,7 @@ body.light-theme {
     background-color: var(--first-color);
     color: var(--body-color);
     padding: 0.75rem 1rem;
-    border-radius: 0.8rem;
+    border-radius: 14px;
     font-weight: var(--font-medium);
     transition: 0.4s;
 }
@@ -443,6 +454,7 @@ body.light-theme {
     background-color: transparent;
     color: var(--first-color);
     border: 1px solid var(--first-color);
+    border-radius: 14px;
 }
 
 /*=============== ABOUT ===============*/
@@ -469,7 +481,7 @@ body.light-theme {
 
 .about__box {
     background-color: var(--container-color);
-    border-radius: 0.75rem;
+    border-radius: 24px;
     padding: 0.75rem 0.5rem;
 }
 
@@ -500,7 +512,7 @@ body.light-theme {
 .skills__content {
     background-color: var(--container-color);
     padding: 1.5rem;
-    border-radius: 1.25rem;
+    border-radius: 24px;
 }
 
 .skills__title {
@@ -553,7 +565,7 @@ body.light-theme {
 .services__card {
     background-color: var(--container-color);
     padding: 3rem 1.5rem 1.5em;
-    border-radius: 1.25rem;
+    border-radius: 24px;
 }
 
 .services__title {
@@ -671,17 +683,17 @@ body.light-theme {
     color: var(--title-color);
     padding: 0.25rem 0.75rem;
     font-weight: var(--font-medium);
-    border-radius: 0.5rem;
+    border-radius: 24px;
 }
 
 .work__card {
     background-color: var(--container-color);
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 24px;
 }
 
 .work__img {
-    border-radius: 1rem;
+    border-radius: 24px;
     margin-bottom: 0.75rem;
 }
 
@@ -720,7 +732,7 @@ body.light-theme {
 .testimonial__card {
     background-color: var(--container-color);
     padding: 1.25rem 1.5rem;
-    border-radius: 1.5rem;
+    border-radius: 24px;
     margin-bottom: 3rem;
 }
 
@@ -770,7 +782,7 @@ body.light-theme {
 .contact__card {
     background-color: var(--container-color);
     padding: 2rem 1rem;
-    border-radius: 0.75rem;
+    border-radius: 24px;
     text-align: center;
 }
 
@@ -827,7 +839,7 @@ body.light-theme {
     height: 100%;
     border: 2px solid var(--text-color-light);
     background: none;
-    border-radius: 0.75rem;
+    border-radius: 24px;
     padding: 1.5rem;
     font-size: var(--normal-font-size);
     color: var(--text-color);
